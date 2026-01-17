@@ -1,0 +1,299 @@
+
+/*style.css*/ 
+body {
+
+    background: linear-gradient(180deg,#001022 0%, #001430 100%);
+
+    color: #00e9ff;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0;
+
+}
+
+
+
+h1 {
+
+     --x: -400px;
+
+    --y: -500px;
+
+    transform: translate(var(--x), var(--y));
+
+    color: #00e9ff;
+
+    text-align: center;
+
+    margin: 12px 0 4px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/*
+
+Source - https://stackoverflow.com/a
+
+Posted by moettinger, modified by community. See post 'Timeline' for change history
+
+Retrieved 2026-01-05, License - CC BY-SA 3.0
+
+*/
+
+
+
+.red-line {
+
+    /* Controls */
+
+    --x:-645px;
+
+    --y: 0px;
+
+    --width: 1000%;
+
+    --thickness: 10px;
+
+    --rotation: 90deg;
+
+
+
+    transform: translate(var(--x), var(--y)) rotate(var(--rotation));
+
+
+
+    display: block;
+
+    width: var(--width);
+
+    height: 0;
+
+
+
+    border: none;
+
+    border-top: var(--thickness) solid #0033ff;
+
+
+
+    margin: 20px auto;
+
+}
+
+
+
+.green-line {
+
+    --x: -435px ;
+
+    --y: 0px;
+
+    --width: 1000%;
+
+    --thickness: 11px;
+
+    --rotation: 90deg;
+
+
+
+    transform: translate(var(--x), var(--y)) rotate(var(--rotation));
+
+
+
+    display: block;
+
+    width: var(--width);
+
+    height: 0;
+
+
+
+    border: none;
+
+    border-top: var(--thickness) solid #0055ff;
+
+
+
+    margin: 20px auto;
+
+}
+
+
+
+
+
+p {
+
+
+
+     --x: -400px;
+
+    --y: -500px;
+
+    transform: translate(var(--x), var(--y));
+
+    color: #66e9ff88;
+
+    text-align: center;
+
+    margin: 0 0 14px;
+
+    font-size: 13px;
+
+}
+
+
+
+
+
+
+
+.display {
+
+    
+    --x: -222.5px;
+
+    --y: 200px;
+
+    transform: translate(var(--x), var(--y));
+
+
+
+    width: 80%;
+
+    height: 56px;
+
+    font-size: 24px;
+
+    text-align: right;
+
+    padding: 8px 12px;
+
+    border: 2px solid rgba(0,233,255,0.18);
+
+    background: #001430;
+
+    color: #00e9ff;
+
+    box-sizing: border-box;
+
+    margin-bottom: 12px;
+
+    border-radius: 0; /* sharp */
+
+}
+
+
+
+
+
+.buttons {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 8px;
+
+}
+
+
+
+.btn {
+
+    height: 56px;
+
+    border-radius: 0; /* sharp corners */
+
+    border: 2px solid rgba(0,233,255,0.06);
+
+    background: #001d2b;
+
+    color: #66e9ff;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: box-shadow 0.06s linear, transform 0.06s linear;
+
+    box-shadow: none;
+
+}
+
+
+
+.btn:hover { box-shadow: 0 0 14px rgba(0,233,255,0.14); }
+
+.btn:active { transform: translateY(1px); }
+
+
+
+.btn.operator {
+
+    background: #001b3a;
+
+    color: #00e9ff;
+
+    border-color: rgba(0,233,255,0.22);
+
+}
+
+
+
+.btn.clear {
+
+    height:50px;
+
+    width:300px;
+
+    background: #00102b;
+
+    color: #66e9ff;
+
+    border-color: rgba(102,233,255,0.18);
+
+}
+
+
+
+.btn.equals {
+
+    background: #002b4d;
+
+    color: #99eaff;
+
+    border-color: #99eaff;
+
+}
+
+
+
+.logo { 
+    width: 48px;
+
+
+    height: 48px; 
+    display: block;
+
+    margin: 12px auto 0;
+
+    border-radius: 0;
+
+    border: 2px solid rgba(0,233,255,0.06);
+
+}

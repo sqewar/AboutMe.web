@@ -1,0 +1,201 @@
+
+body { margin: 0; padding: 20px; background: #00000000; font-family: Arial, sans-serif; }
+
+.window {
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  left: 100px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titlebar {
+  height: 30px;
+  background: #000000;
+  color: white;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: move;
+  
+  
+}
+
+.titlebar span { font-weight: bold; font-size: 13px; }
+
+.controls {
+  display: flex;
+  gap: 5px;
+}
+
+.one{
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: #df0000;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.two{
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: #2aa3ff;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover { background: rgba(255, 255, 255, 0.5); }
+
+.content {
+  flex: 1;
+  padding: 12px;
+  overflow: auto;
+}
+
+.hidden { display: none; }
+
+
+body { margin: 0; padding: 20px; padding-bottom: 5000px; background: #006039; font-family: Arial, sans-serif; position: relative; }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000d8;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: rgb(175, 175, 175);
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.profile {
+    position: fixed;
+    top: clamp(160px, 12vw, 200px);
+    left: clamp(40%, 50vw, 60%);
+    transform: translateX(-50%);
+    border-radius: 40%;
+    border: 2px solid rgba(0,233,255,0.06);
+    z-index: 10;
+}
+.banner {
+    position: fixed;
+    top: clamp(80px, 10vw, 120px);
+    left: clamp(40%, 50vw, 60%);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    border: 2px solid rgba(0,233,255,0.18);
+    z-index: 5;
+}
+.title {
+    position: absolute;
+    top: clamp(80px, 8vw, 100px);
+    left: clamp(40%, 50vw, 60%);
+    transform: translateX(-50%);
+    color: #ffffffde;
+    font-size: clamp(24px, 4vw, 48px);
+    z-index: 10;
+}
+
+.Name {
+    position: absolute;
+    top: clamp(280px, 25vw, 335px);
+    left: clamp(48%, 54vw, 50%);
+    transform: translateX(045% );
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 14px;
+    font-size: clamp(28px, 5vw, 48px);
+    z-index: 100;
+}
+
+.title2{
+    position: absolute;
+    top: clamp(255px, 22vw, 300px);
+    left: clamp(05%, 47vw, 50%);
+    transform: translateX(-150%);
+    color: #ffffffde;
+    font-size: clamp(38px, 4vw, 48px);
+    z-index: 10;
+}
+
+.info-section {
+    position: absolute;
+    top: clamp(400px, 35vw, 500px);
+    left: clamp(10%, 50vw, 90%);
+    transform: translateX(-50%);
+    color: #ffffff;
+}
+
+.info-group {
+    margin: 10px 0;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.paragraph {
+    position: absolute;
+    top: clamp(550px, 45vw, 650px);
+    left: clamp(10%, 50vw, 90%);
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: clamp(14px, 1.8vw, 18px);
+    max-width: 90%;
+}
+
+.paragraph2 {
+    position: absolute;
+    top: clamp(700px, 55vw, 750px);
+    left: clamp(10%, 50vw, 90%);
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: clamp(14px, 1.8vw, 18px);
+    max-width: 90%;
+}
+
+
+.smaller-font {
+    font-size: 12px;
+}
+/*https://www.w3schools.com/cssref/func_clamp.php*/
